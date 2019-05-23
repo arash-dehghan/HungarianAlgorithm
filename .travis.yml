@@ -16,7 +16,7 @@ notifications:
 #  - julia -e 'Pkg.clone(pwd()); Pkg.build("RouteBidModel"); Pkg.test("RouteBidModel"; coverage=true)';
 
 after_success:
-  - julia -e 'using Pkg; cd(Pkg.dir("RouteBidModel")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())';
+  - julia -e 'using Pkg; cd(Pkg.dir("HungarianAlgorithm")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())';
 #  - julia -e 'if VERSION >= v"0.7.0-" using Pkg end; cd(Pkg.dir("RouteBidModel")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())';
 
 jobs:
